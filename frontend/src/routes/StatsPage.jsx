@@ -6,7 +6,7 @@ export default function StatsPage() {
   useEffect(() => {
     (async () => {
       try {
-        await Log("frontend", "debug", "component", "entered /stats");
+        await Log("frontend", "debug", "stats", "opened stats");
       } catch {}
     })();
   }, []);
@@ -15,9 +15,9 @@ export default function StatsPage() {
     <Card>
       <CardContent>
         <Typography variant="h5" sx={{ mb: 2 }}>
-          Short Links
+          Stats
         </Typography>
-        <Alert severity="info">Stats table coming next.</Alert>
+        <Alert severity="info">Stats table will go here.</Alert>
       </CardContent>
     </Card>
   );
